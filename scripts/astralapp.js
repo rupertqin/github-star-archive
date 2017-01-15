@@ -1,1 +1,5 @@
-$$('.repos>li').map(function(e){ return `### [${e.querySelector('.repo-name').innerText}](${e.querySelector('a')}) \n > ${e.querySelector('.repo-description').innerText} `}).join('\n\n')
+$$('.repos>li').map(function(e){ 
+   str = `### [${e.querySelector('.repo-name').innerText}](${e.querySelector('a')}) 
+> ${e.querySelector('.repo-description').innerText} `
+  return str
+}).join('\n\n')
